@@ -1,0 +1,145 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+body{
+  margin: 0;
+  background-image: url(360_F_248813143_0Hn6ziX9B8FftE8SNjTdmbVEsplQFf65.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.container {
+  margin-top: 1px;
+  margin-left: 150px;
+  margin-right: 150px;
+  /* background: rgba(0,0,0,0.35); */
+  padding: 25px;
+  border-radius: 8px;
+}
+h1, h2 {
+  color: aliceblue;
+  background-color: transparent;
+}
+.movieName{
+  /* horizontal card layout */
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  align-items: flex-start;
+  /* allow cards to flow in sequence and wrap to next line */
+}
+.card{
+  border: 1px solid #233e70;
+  margin: 10px;
+  background-color: #212223;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  min-height: 160px;
+  width: 160px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out , box-shadow 0.5s ease-in-out;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+.card h2{
+  margin: 0;
+  font-size: 16px;
+}
+.cardFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 5px;
+  margin-left: 3px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.button{
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  color: rgb(200, 200, 200);
+  padding: 10px;
+}
+.poster{
+  background-image: url('poster.jpg');
+  background-size: cover;
+  height: 500px;
+  margin-left: 175px;
+  margin-right: 190px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-position: center;
+}
+.button:hover{
+  transform: scale(1.2);
+}
+.cardimage{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+/* #root {
+  min-height: 100vh;
+} */
+ .searchContainer {
+  position: relative;
+  width: 800px;
+  margin: 10px auto;
+ }
+.searchBar {
+  /* margin-bottom: 20px;
+  margin-left: 535px;
+  width: 500px;
+  padding: 6px;
+  border-radius: 20px;
+  background-color: #1f1f20;
+  color: turquoise;
+  font-size: 18px;
+  padding-left: 15px;
+  font-weight: 800;
+  outline: turquoise; */
+  width: 100%;
+  padding: 5px 45px 10px 45px;
+  border-radius: 25px;
+  background-color: #1f1f20;
+  color: turquoise;
+  font-size: 18px;
+  font-weight: 800;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
+}
+.searchButton{
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.searchButton img {
+  width: 22px;
+  height: 22px;
+}
